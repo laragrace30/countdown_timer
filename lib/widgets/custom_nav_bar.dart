@@ -5,27 +5,23 @@ class CustomNavBar extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-@override
+  @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       type: BottomNavigationBarType.fixed,
       backgroundColor: Colors.deepPurple.shade800,
       unselectedItemColor: Colors.white,
-      selectedItemColor: Colors.white,
+      selectedItemColor: const Color.fromRGBO(255, 255, 255, 1),
       showUnselectedLabels: true,
       showSelectedLabels: true,
       items: const [
         BottomNavigationBarItem(
-          icon: Icon(Icons.home),
+          icon: Icon(Icons.home_outlined),
           label: 'Home',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.favorite_outline),
-          label: 'Favorites',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.play_circle_outline),
-          label: 'Play',
+          icon: Icon(Icons.timer),
+          label: 'Timer',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.people_outline),
