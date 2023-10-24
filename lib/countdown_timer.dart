@@ -57,6 +57,7 @@ class CountdownTimerState extends State<CountdownTimer> {
         title: const Text('SmartWOD Timer',
         style: TextStyle(
           fontSize: 24,
+          color: Colors.white
         ),
         ),
         backgroundColor: Colors.deepPurple.shade800,
